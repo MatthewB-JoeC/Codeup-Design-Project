@@ -92,8 +92,8 @@ nav .nav-item {
     margin-bottom: 5em;
 }
 .large-round{
-    height: 18vh;
-    width: 14vw;
+    width: 178px;
+    height: 178px;
     text-align: center;
     color: white;
     border: 5px solid white;
@@ -102,6 +102,10 @@ nav .nav-item {
     align-items: center;
     justify-content: center;
     margin: 1em;
+    flex-shrink: 0;
+}
+.wrappingIcons{
+    flex-wrap: wrap;
 }
 
 .round{
@@ -182,6 +186,11 @@ nav .nav-item {
         display: flex;
         justify-content: flex-start;
     }
+    .large-round{
+        /*width: 128px;*/
+        /*height: 128px;*/
+        flex-shrink: 0;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -202,8 +211,12 @@ nav .nav-item {
         border: 2px solid grey;
     }
     .large-round{
-        width: 178px;
-        height: 178px;
+        /*width: 178px;*/
+        /*height: 178px;*/
+        flex-shrink: 0;
+    }
+    .wrappingIcons{
+        flex-wrap: nowrap;
     }
     .smallHeader{
         display: flex;
@@ -215,6 +228,11 @@ nav .nav-item {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .large-round{
+        flex-shrink: 0;
+        /*width: 178px;*/
+        /*height: 178px;*/
     }
     .maxViewHeader{
         display: inline-block;
