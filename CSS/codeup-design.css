@@ -47,6 +47,11 @@ nav .nav-item {
     position: relative;
     bottom: 6px;
 }
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
 
 .small-image{
     width: 19%;
@@ -65,7 +70,7 @@ nav .nav-item {
 }
 .article{
     display: flex;
-    height: 23%;
+    height: 28%;
 }
 .article-heading{
 
@@ -89,7 +94,15 @@ nav .nav-item {
 
 }
 .group6{
-    margin-bottom: 5em;
+    margin: 4em 0;
+}
+.fab{
+    margin-right: 1em;
+    font-size: 1.5em;
+    color: #0379f7;
+}
+.twitter-heading{
+    display: flex;
 }
 .large-round{
     width: 178px;
@@ -109,13 +122,15 @@ nav .nav-item {
 }
 
 .round{
-    height: 1vh;
-    width: 1vw;
+    height: 65%;
+    width: 100%;
     text-align: center;
     border: 1px solid #f0f0f0;
     border-radius: 50px;
 }
+.feature{
 
+}
 .red-d{
     background-color: #e6563b;
 }
