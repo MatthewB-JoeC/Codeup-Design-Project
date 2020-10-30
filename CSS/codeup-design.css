@@ -12,11 +12,14 @@ h1, h2, h3{
     text-transform: uppercase;
 }
 h1{
-    font-size: 64px;
+    font-size: 3.5rem;
     text-align: center;
 }
 h2{
-    font-size: 40px;
+    font-size: 2rem;
+}
+.subHeading{
+    white-space: nowrap;
 }
 p, h6{
     text-transform: uppercase;
@@ -64,6 +67,8 @@ nav .nav-item {
 .large-image{
     width: 100%;
     height: 75%;
+    border: 6px solid #eae6e6;
+    border-radius: 3%;
 }
 .img-description{
     display: flex;
@@ -73,27 +78,30 @@ nav .nav-item {
 .article{
     display: flex;
     height: 28%;
+    white-space: nowrap;
 }
 .article-heading{
-
+    margin-left: 4%;
+    font-size: 2.0rem;
 }
 .groupProject{
-    height: 75%;
+    height: 92%;
 }
 .group1{
-
+    margin: 0 .5em .5em 0;
 }
 .group2{
+    margin: 0 .5em 0 0;
 
 }
 .group3{
-
+    margin: 0 .5em .5em .5em;
 }
 .group4{
-
+    margin: 0 .5em .5em 0;
 }
 .group5{
-
+    margin: 0 0 .5em 0;
 }
 .group6{
     margin: 4em 0;
@@ -101,14 +109,15 @@ nav .nav-item {
 .fab{
     margin-right: 1em;
     font-size: 1.5em;
-    color: #0379f7;
+    color: #0c9bf8;
 }
 .twitter-heading{
     display: flex;
+    margin-bottom: .5em;
 }
 .large-round{
-    width: 178px;
-    height: 178px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     color: white;
     border: 8px solid white;
@@ -116,13 +125,9 @@ nav .nav-item {
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 1em;
+    margin: 1em .25em;
     flex-shrink: 0;
 }
-.wrappingIcons{
-    flex-wrap: wrap;
-}
-
 .round{
     height: 22px;
     width: 22px;
@@ -177,6 +182,7 @@ span{
 
 .iconsAcrossTop{
     display:flex;
+    flex-wrap: wrap;
 }
 .headers{
     margin-bottom: 2em;
@@ -207,15 +213,27 @@ span{
     .image-box-last{
         display: none;
     }
+    .iconsAcrossTop{
+        flex-wrap: nowrap;
+        margin-right: 0;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
     .smallHeader{
         display: flex;
         justify-content: center;
     }
-
+    .groupProject{
+        height: 85%;
+    }
     .large-round{
-        /*width: 128px;*/
-        /*height: 128px;*/
         flex-shrink: 0;
+        width: 178px;
+        height: 178px;
     }
 }
 
@@ -237,15 +255,12 @@ span{
         margin: 2em 6vw 5em;
         height: 0;
         width: 100%;
-        border: 2px solid grey;
+        border: 2px solid #dcdada;
     }
     .large-round{
         /*width: 178px;*/
         /*height: 178px;*/
         flex-shrink: 0;
-    }
-    .wrappingIcons{
-        flex-wrap: nowrap;
     }
     .smallHeader{
         display: flex;
@@ -259,11 +274,10 @@ span{
         flex-direction: column;
         justify-content: space-between;
     }
-
+    .iconsAcrossTop{
+    }
     .large-round{
         flex-shrink: 0;
-        /*width: 178px;*/
-        /*height: 178px;*/
     }
     .maxViewHeader{
         display: inline-block;
@@ -280,10 +294,28 @@ span{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 26vh;
+        margin-top: 1rem;
+        margin-right: 10rem;
     }
 }
 @media screen and (min-width: 1200px){
     .groupProject{
         height: 60%;
+    }
+    .article-group{
+        height: 36vh;
+    }
+    .article-heading{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (min-width: 1400px){
+    .article-group{
+        height: 32vh;
+    }
+    .small-image {
+        width: 33%;
+        height: 80%;
     }
 }
