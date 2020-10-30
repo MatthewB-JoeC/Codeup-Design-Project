@@ -282,3 +282,8 @@ span{
         justify-content: space-between;
     }
 }
+@media screen and (min-width: 1200px){
+    .groupProject{
+        height: 60%;
+    }
+}
