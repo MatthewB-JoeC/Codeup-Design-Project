@@ -278,6 +278,8 @@ span{
     }
     .large-round{
         flex-shrink: 0;
+        margin-right: .5em;
+        margin-left: .6em;
     }
     .maxViewHeader{
         display: inline-block;
@@ -294,7 +296,7 @@ span{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 26vh;
+        height: 29vh;
         margin-top: 1rem;
         margin-right: 10rem;
     }
@@ -312,6 +314,6 @@ span{
 }
 @media screen and (min-width: 1400px){
     .article-group{
-        height: 32vh;
+        height: 36vh;
     }
 }
